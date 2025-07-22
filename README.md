@@ -33,27 +33,50 @@ This project presents a structured analysis of global socioeconomic data using t
 **Objective:** Execute business-relevant queries to identify demographic and economic trends by country.
 
 **Example queries:**
-- Countries with infant mortality between 40 and 50 deaths per 1,000 live births.
-- Countries with birth rates ≥ 20 and life expectancy > 75 years.
-- Countries whose name contains the word "la".
-- Countries with more than 5 physicians per 1,000 people.
-- Countries with fertility rate > 6.
-- Countries using the Euro (EUR) and with above-average birth rate.
+- Countries with infant mortality > 50 (very high).
+- Countries with infant mortality < 10 (very low).
+- Countries with life expectancy > 75 years.
+- Countries whose name contains the word "Islands".
+- Countries with less than 1 physician per 1,000 people (critical shortage).  
+- Countries with more than 3 physicians per 1,000 people (efficient health systems).
+- Countries with fertility rate > 2.1 (growing population).  
+- Countries with fertility rate < 2.1 (shrinking or aging population).
+- Countries using the Euro (EUR) and with above-average birth rate.  
+- Countries using the US Dollar (USD) and with above-average birth rate.  
 - Countries with infant mortality rate above 70.
+- Countries with the most frequent birth rate value.
+
+Note:
+The mode (most frequent birth rate value) highlights common patterns that may reflect cultural or regional influences.
+The minimum and maximum birth rates define the range and help detect potential outliers.
+The standard deviation of birth rates measures how much birth rates vary across countries — low values indicate similarity, while high values suggest disparity.
+
+---
+
+## 📈 4.Temporal Trends and Changes
+**Objective:** Explore how indicators have evolved over time to detect long-term patterns or shocks.
+
+**Example queries:**
+- Countries with declining fertility rate since 2000.
+- Countries with a sharp drop in birth rate between 2019 and 2021. 
+- Trend of average life expectancy in BRICS vs G7 countries.
 
 ---
 
 ## 🧠 Skills Demonstrated
-- Data integration and transformation using Pandas.
-- Data cleaning, parsing, and standardization.
-- Logical filtering and exploratory data analysis.
-- Insight generation for global development and economic trends.
-- Technical documentation and reproducibility of results.
+- Integrating and transforming data using Pandas.
+- Cleaning, parsing, and standardizing datasets for analysis.
+- Applying logical filtering and exploratory data analysis (EDA).
+- Generating insights on global development and economic trends.
+- Documenting analysis for technical clarity and reproducibility.
+- Comparing temporal and cross-sectional data using groupby and pivoting.
+- Summarizing distributions with statistical metrics (standard deviation, min/max, mode).
+- Segmenting indicators through conditional querying and business logic.
+- Combining demographic and economic dimensions for multivariate analysis.
+- Communicating findings through structured, query-driven data storytelling.
 
 ---
 
 ## 📚 References
-- World Bank (2023). *World Development Indicators*.  
-- United Nations Development Programme (2023). *Human Development Data*.  
-- OECD (2023). *Tax Revenue and Labour Statistics*.  
-- Kaggle Datasets (2023). *World Socioeconomic Indicators 2023*.
+Data provided as part of an institutional data project by Adalab. Sources adapted from international organizations such as the World Bank (2023), United Nations Development Programme (2023), and OECD (2023).
+
